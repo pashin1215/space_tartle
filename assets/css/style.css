@@ -391,3 +391,101 @@ hr {
     right: 0;
     z-index: 1;
 }
+
+
+/* We do */
+.wedo {
+    display: flex;
+
+}
+
+.wedo__item {
+    width: 50%;
+
+}
+
+
+/* Accordion */
+.accordion__item {
+    margin-bottom: 10px;
+    border: 2px solid #0306bd;
+    
+}
+
+.accordion__item.active
+.accordion__content{
+    display: block;
+}
+
+.accordion__item.active
+.accordion__header {
+    border-bottom-color: #0306bd;
+    
+}
+
+.accordion__item.active
+.accordion__header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+.accordion__header {
+    padding: 15px 20px 15px 80px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: background .2s linear, color .2s linear;
+}
+
+.accordion__header:hover {
+    background-color: #FFC48D;
+}
+
+.accordion__header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 5px solid #0306bd;
+    border-right: 5px solid #0306bd;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.accordion__content {
+    display: none;
+    padding: 15px 20px;
+
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.accordion__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0306bd;
+}
+
+
+
+
+
+
+
+
+
+
