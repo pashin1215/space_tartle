@@ -225,6 +225,12 @@ hr {
     background-size: cover;
 }
 
+.section--clients {
+    background: #dfd5d5 url("../images/clients.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 .section__header{
     width: 100%;
     max-width: 950px;
@@ -327,9 +333,6 @@ hr {
 
 }
 
-.card__prof {
-
-}
 
 
 /* Statistics */
@@ -621,11 +624,138 @@ hr {
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logos__item {
+
+/* Works */
+.works {
+    display: flex;
+}
+
+.works__col {
+    
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+
+    background: linear-gradient(to bottom,#318CE7 ,#000000);
+}
+
+.works__item:hover .works__image {
+    opacity: 0.1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 0.2s linear;
+}
+
+.works__info {
+    width: 100%;
+    padding: 0 15px;
+
+    text-align: center;
+    color: #FFC48D;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate3d(0, -50%, 0);
+    transition: opacity 0.2s linear;
+    
+}
+
+.works__title {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.works__text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* Clients */
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.clients__item {
+    width: 50%;
+    padding: 0 45px 0 175px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.clients__photo {
+    width: 110px;
+    height: 110px;
+
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 1;
+}
+
+.clients__name {
+    margin-bottom: 5px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #0306bd;
+    text-transform: uppercase;
 
 }
+
+.clients__prof {
+    font-size: 18px;
+    color: #0306bd;
+
+}
+
+.clients__text {
+    font-size: 16px;
+}
+
+.clients__text:before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px 0;
+
+
+    background-color:#0306bd;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
