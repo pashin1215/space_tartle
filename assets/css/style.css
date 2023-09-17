@@ -231,6 +231,15 @@ hr {
     background-size: cover;
 }
 
+.section--gray {
+    background-color: #dfd5d5;
+}
+
+.section--map {
+    padding: 40px 0;
+    background: #dfd5d5 url("../images/map.jpg") center no-repeat / cover;
+}
+
 .section__header{
     width: 100%;
     max-width: 950px;
@@ -508,9 +517,7 @@ hr {
 
 
 /* Reviews */
-.section--gray {
-    background-color: #dfd5d5;
-}
+
 
 .reviews {
     padding: 0 110px;
@@ -745,6 +752,254 @@ hr {
 
     background-color:#0306bd;
 }
+
+
+/* Blog */
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__item {
+    width: 31%;
+    
+}
+
+.blog__header {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.blog__photo {
+    display: block;
+    min-width: 100%;
+    
+}
+
+.blog__date {
+    padding: 10px 20px;
+    background-color: #FFC48D;
+
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
+    border: 3px solid #0306bd;
+}
+
+.blog__date--day {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+
+}
+
+.blog__content {
+    margin-bottom: 14px;
+}
+
+.blog__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0306bd;
+}
+
+.blog__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blog__title a:hover {
+    text-decoration: underline;
+}
+
+.blog__footer {
+    padding-top: 14px;
+    border-top: 1px solid #0306bd;
+
+    font-size: 15px;
+    font-weight: 300;
+    color: #0306bd;
+}
+
+.blog-stat__item {
+    display: inline-block;
+    margin-right: 35px;
+        
+}
+
+.blog-stat__icon {
+    margin-left: 0px;
+    vertical-align: middle;
+        
+}
+
+.blog-stat__num {
+    font-size: 17px;
+    padding-left: 10px;
+    vertical-align: middle;
+       
+}
+
+
+/* Map */
+.map {
+    text-align: center;
+}
+
+.map__title {
+    font-size: 24px;
+    color: #0306bd;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.map__title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 20px auto 0;
+    background-color:#0306bd;
+}
+
+.map__title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.map__title a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.footer {
+    
+    padding-top: 65px;
+    background-color: #dfd5d5;
+}
+
+.footer__inner {
+    padding-bottom: 65px;
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #0306bd;
+}
+
+.footer__text {
+    margin-bottom: 30px;
+    font-size: 15px;
+
+}
+
+.footer__social {
+    margin-bottom: 25px;
+}
+
+.footer__social-header {
+    padding-bottom: 15px;
+    font-size: 14px;
+    border-bottom: 2px solid #0306bd;
+}
+
+.footer_social-header b {
+    
+    font-size: 18px;
+}
+
+.footer__social-content {
+    padding-top: 15px;
+    font-style: 15px;
+    font-weight: 300;
+}
+
+.footer__social-content a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+    font-style: 18px;
+
+}
+
+
+/* Subscribe */
+.subscribe {
+    display: flex;
+    width: 100%;
+    min-width: 380px;
+}
+
+.subscribe__input {
+    
+    height: 40px;
+    padding: 12px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-right: 0;
+
+    line-height: 1.1;
+    font-style: oblique;
+
+    font-family: 'Montserrat', sans-serif;
+
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.subscribe__input::placeholder {
+    color: #ccc;
+}
+
+.subscribe__input:focus {
+    outline: 0;
+    border-color: #318CE7;
+}
+
+.subscribe__btn {
+    
+    height: 40px;
+    padding: 12px 30px;
+
+
+    background-color: #318CE7;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: #dfd5d5;
+
+    transition: background 0.2s linear;
+}
+
+.subscribe__btn:hover {
+    background-color: #0306bd;
+}
+
+.subscribe__btn:focus {
+    outline: 0;
+}
+
+
+
+
 
 
 
