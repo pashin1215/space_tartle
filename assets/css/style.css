@@ -412,7 +412,7 @@ hr {
 
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 10px;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
     transition: opacity 0.2s linear;
@@ -512,11 +512,12 @@ hr {
 
 .devices__item {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 .devices__item--station {
+
     height: 200px;
     
     margin-left: -400px;
@@ -1284,6 +1285,9 @@ hr {
 
 
 @media (max-width: 1230px) {
+    .section {
+        padding: 30px 0;
+    }
 
     /* Intro */
     .intro__suptitle {
@@ -1292,13 +1296,51 @@ hr {
     .intro__title {
         font-size: 120px;
     }
+    .intro__inner {
+        margin-top: 58px;
+    }
 
+    /* Card */
+    .card__img img {
+        height: 300px;
+    }
+
+    /* Services */
+    
+    .services__item {
+        margin-bottom: 0px;
+    }
+    .services__item--border {
+        margin-bottom: 50px;
+    }
     /* Reviews */
 
     .reviews__text {
-            font-size: 20px;
-        }
+        font-size: 20px;
+    }
+    .reviews__btn {
+        top: 25%;
+    }
+
+    /* Devices */
+    .devices__item--station {
+        width: 430px;
+        
+        margin-left: -204px;
+    }
+    .devices__item--shatlle {
+        height: 365px;
+        margin-right: -242px;
+    }
     
+    /* Works */
+    .works__image {
+        height: 350px;
+    }
+    .works__image--big {
+        height: 700px;
+    }
+
 
 }
 
@@ -1307,36 +1349,63 @@ hr {
 
     /* Intro */
     .intro__suptitle {
-        font-size: 32px;
+        font-size: 40px;
     }
     .intro__title {
         font-size: 80px;
     }
+    .btn {
+        margin-top: 60px;
+    }
+    /* Card */
+    .card__img img {
+        height: 270px;
+    }
 
     /* Stat */
     .stat {
-        justify-content: center;
+        justify-content: space-between;
     }
     .stat__item {
         flex: none;
-        width: 33.33333%;
+        width: 20%;
         padding-top: 30px;
         padding-bottom: 30px;
-        border: 0;
+        
     }
-    .stat__item:last-child {
-        border-right: 0;
-
+    .stat__count {
+        font-size: 60px;
     }
-
+    
     /* Services */
 
     .services__item {
         width: 50%;
         padding-bottom: 0;
+        margin-bottom: 50px;
     }
     .services__item--border {
         border-bottom: 0;
+    }
+
+    /* Devices */
+    .devices__item--station {
+        width: 430px;
+        
+        margin-left: -180px;
+    }
+    .devices__item--shatlle {
+        height: 330px;
+        margin-right: -183px;
+        bottom: -180px;
+    }
+
+    /* Works */
+    .works__image {
+        height: 300px;
+    }
+    .works__image--big {
+        height: 600px;
     }
 
     /* Reviews */
@@ -1361,6 +1430,13 @@ hr {
     }
     .clients__item:last-child {
         margin-bottom: 0;
+    }
+
+    /* Blog */
+
+    .blog__photo {
+        width: 295px;
+        height: 290px;
     }
 
     /* Footer */
@@ -1389,6 +1465,12 @@ hr {
     /* Intro */
     .intro {
         min-height: 650px;
+    }
+    .intro__inner {
+        margin-top: 85px;
+    }
+    .btn {
+        margin-top: 15px;
     }
 
     /* Nav */
@@ -1420,11 +1502,30 @@ hr {
 
     .card__item {
         width: 100%;
-        min-width: 375px;
+        max-width: 400px;
         margin-bottom: 30px;
     }
     .card__item:last-child {
         margin-bottom: 0;
+
+    }
+    .card__inner {
+        width: 330px;
+    }
+
+    /* Stat */
+    .stat {
+        justify-content: center;
+    }
+    .stat__item {
+        flex: none;
+        width: 33.33333%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border: 0;
+    }
+    .stat__item:last-child {
+        border-right: 0;
 
     }
 
@@ -1441,6 +1542,23 @@ hr {
     }
     .services__icon {
         left: 0;
+    }
+    .services__title,
+    .services__text {
+        margin-left: 35px;
+    }
+
+    /* Devices */
+    .devices__item--station {
+        
+        width: 430px;
+        
+        margin-left: -90px;
+    }
+    .devices__item--shatlle {
+        height: 235px;
+        margin-right: -70px;
+        bottom: -112px;
     }
 
     /* Wedo */
@@ -1505,10 +1623,13 @@ hr {
     /* Intro */
     
     .intro__suptitle {
-        font-size: 22px;
+        font-size: 30px;
     }
     .intro__title {
-        font-size: 40px;
+        font-size: 53px;
+    }
+    .btn {
+        margin-top: 85px;
     }
 
     /* Section */
@@ -1539,14 +1660,14 @@ hr {
     }
     
     /* Devices */
-    .devices {
-        min-width: 320px;
-    }
     .devices__item--station {
-        width: 180px;
+        width: 392px;
+        margin-left: -110px;
     }
     .devices__item--shatlle {
-        width: 280px;
+        height: 182px;
+        margin-right: -7px;
+        bottom: -75px;
     }
 
     /* Reviews */
@@ -1554,8 +1675,13 @@ hr {
     .reviews {
         padding: 0;
     }
+    .reviews__text,
+    .reviews__author {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .reviews__btn {
-        top: 18%;
+        top: 12%;
     }
 
     /* Logos */
@@ -1574,9 +1700,7 @@ hr {
 
     /* Works */
 
-    .works__col {
-        width: 100%;
-    }
+    
 
     /* Clients */
     .clients__photo {
