@@ -1741,6 +1741,50 @@ hr {
 }
 
 
+@media (max-width: 380px) {
+
+    /* Header */
+    .header__inner {
+        margin-top: 7px;
+    }
+    .nav-toggle {
+        margin-top: 7px;
+    }
+    .intro__inner {
+        margin-top: 115px;
+    }
+
+    /* Card */
+
+    .card__item {
+        padding: 0 23px;
+    }
+    .reviews__btn {
+        top: 10%;
+    }
+
+    /* Devices */
+    .devices__item--station {
+        width: 392px;
+        margin-left: -110px;
+        padding-bottom: 50px;
+    }
+    .devices__item--shatlle {
+        height: 150px;
+        margin-right: -7px;
+        bottom: -75px;
+    }
+
+    /* Works */
+
+    .works__image {
+        height: 250px;
+    }
+    .works__image--big {
+        height: 500px;
+    }
+
+}
 
 
 
