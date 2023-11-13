@@ -1741,7 +1741,7 @@ hr {
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
 
     /* Header */
     .header__inner {
@@ -1757,7 +1757,7 @@ hr {
     /* Card */
 
     .card__item {
-        padding: 0 23px;
+        padding: 0 35px;
     }
     .reviews__btn {
         top: 10%;
