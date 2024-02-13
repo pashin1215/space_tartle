@@ -105,8 +105,8 @@ hr {
     z-index: 1000;
 }
 
-.header--fixed {
-    padding: 10px 0;
+.header.fixed {
+    
     background-color: #000;
     box-shadow: 0 5px 10px #0306bd;
     position: fixed;
@@ -115,6 +115,11 @@ hr {
     right: 0;
     
     transform: translate3d(0, 0, 0);
+}
+
+.header.active {
+    background-color: #000;
+
 }
 
 .header__inner{
@@ -199,10 +204,20 @@ hr {
 .nav-toggle {
     width: 30px;
     padding: 10px 0;
+    display: none;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
     position: absolute;
     top: 24px;
     right: 24px;
     z-index: 1;
+
 }
 
 .nav-toggle__item {
@@ -217,6 +232,24 @@ hr {
     bottom: 0;
     left: 0;
     margin: auto;
+
+    transition: background 0.2s linear;
+
+    
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle.active .nav-toggle__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-3px);
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-3px);
 }
 
 .nav-toggle__item:before,
@@ -228,6 +261,8 @@ hr {
     background-color: #49EB37;
     left: 0;
     z-index: 1;
+
+    transition: transform 0.2s linear;
 }
 
 .nav-toggle__item:before {
@@ -1335,10 +1370,10 @@ hr {
     
     /* Works */
     .works__image {
-        height: 350px;
+        height: 300px;
     }
     .works__image--big {
-        height: 700px;
+        height: 600px;
     }
 
 
@@ -1361,6 +1396,9 @@ hr {
     .card__img img {
         height: 270px;
     }
+
+    .card__item{
+        padding: 0 18px;
 
     /* Stat */
     .stat {
@@ -1473,9 +1511,31 @@ hr {
         margin-top: 15px;
     }
 
+    /* Header */
+
+    .header {
+        padding: 10px 0;
+    }
+
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #000000;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+
+    }
+
+    .nav-toggle {
+        display: block;
     }
 
     /* Slider */
